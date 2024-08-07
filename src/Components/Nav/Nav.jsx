@@ -66,7 +66,7 @@ const Nav = ({ isOpen, onTooggle }) => {
           <div className=" left-Side-Section py-3 lg:py-0 flex flex-col lg:flex-row justify-between lg:items-center">
             <ul className=" navList  capitalize py-3 lg:py-0 flex flex-col lg:flex-row gap-10 lg:gap-4 xl:gap-10 lg:items-center font-bold text-xl lg:text-base lg:font-medium ">
               <li className="group flex items-center gap-[0.1rem] relative">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={()=>setResponsiveNav(false)}>Home</NavLink>
                 <MdKeyboardArrowDown />
                 <NavDropDown
                   info={[
@@ -78,7 +78,7 @@ const Nav = ({ isOpen, onTooggle }) => {
                 />
               </li>
               <li>
-                <NavLink to="about">about us</NavLink>
+                <NavLink to="about" onClick={()=>setResponsiveNav(false)}>about us</NavLink>
               </li>
               <li className="group flex items-center gap-[0.1rem] relative">
                 pages
@@ -108,7 +108,7 @@ const Nav = ({ isOpen, onTooggle }) => {
                 />
               </li>
               <li>
-              <NavLink to="contact">   contact us</NavLink>
+              <NavLink to="contact" onClick={()=>setResponsiveNav(false)}>   contact us</NavLink>
             </li>
             </ul>
           </div>
