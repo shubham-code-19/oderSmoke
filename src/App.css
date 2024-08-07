@@ -203,7 +203,7 @@ body{
     position: relative;
     overflow: hidden;
     /* z-index: 10; */
-    background-color: pink;
+
    }
    .Footer::before{
     content: "";
@@ -215,6 +215,7 @@ body{
     top: 0;
     z-index: -1;
     background-image: url("./assetss/asset52.jpeg");
+    background-color: black;
     background-position: center;
     background-size: cover;
    }
