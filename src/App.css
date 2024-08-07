@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: montserrat;
+    overflow-x: hidden
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap');
+
+/* h1,h2,h3,h4,h5,h6,p{
+    font-family:prosto-one-regular;
+   
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prosto+One&display=swap');
+
+
+/* .prosto-one-regular {
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+   .HeroParent{
+    /* height: 100vh; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   }
+   .HeroParent::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.2;
+   }
+
+
+   .heriBG-rightImg{
+    animation:rightIgBG 5s infinite linear ;
+    /* transform: translateY(10px); */
+    display: none;
+   }
+
+   @keyframes rightIgBG {
+    0%{
+        transform: translateY(-10%);
+    }
+    50%{
+        transform: translateY(-15%);
+
+    }
+    /* 75%{
+        transform: translateY(-30%)
+
+    } */
+    100%{
+        transform: translateY(-10%);
+    }
+   }
+
+   
+   .CardParentChild::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FA4F09;
+    opacity: 0;
+   }
+   .CardParentChild:hover::after{
+    opacity: 0.5;
+   }
+
+   .CardParentChild::before{
+    content: "ss";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    
+    z-index: -1;
+   }
+
+   .LiquidBundle::before{
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assetss/asset50.jpeg");
+    background-repeat: no-repeat;
+   }
+
+   .LatestTopRating{
+    position: relative;
+   
+   }
+   .LatestTopRating::after{
+    content: "";
+    height: 50%;
+    width: 1%;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    background-color: rgba(255, 255, 255, 0.441);
+    
+
+   }
+   .LatestTopRating::before{
+    content: "";
+    height: 50%;
+    width: 1%;
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    background-color: rgba(255, 255, 255, 0.441);
+    
+
+   }
+
+   .latestDot1{
+    animation: latest1 5s infinite linear;
+   }
+   @keyframes latest1{
+    0%{
+        transform:translateX(10%);
+    }
+    50%{
+        transform:translateX(90%);
+
+    }
+    100%{
+        transform:translateX(10%);
+
+    }
+   }
+   .latestDot2{
+    animation: latest2 3s infinite;
+
+   }
+   @keyframes latest2{
+    0%{
+        transform:translateX(-10%);
+    }
+    50%{
+        transform:translateX(-90%);
+
+    }
+    100%{
+        transform:translateX(-10%);
+
+    }
+   }
+   .AddToCartLatestArrival{
+    position: relative;
+    overflow: hidden;
+   }
+   .AddToCartLatestArrival::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: orangered;
+    z-index: -1;
+    transition: all 0.3s;
+   }
+   .AddToCartLatestArrival::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: orangered;
+    z-index: -1;
+    transition: all 0.3s;
+   }
+   .AddToCartLatestArrival:hover::before{
+    width: 50%;
+   }
+   .AddToCartLatestArrival:hover::after{
+    width: 50%;
+   }
+
+   .bestFavBgImage{
+    background: url("./assetss/asset51.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+   }
+
+
+   .Footer{
+    position: relative;
+    overflow: hidden;
+    /* z-index: 10; */
+   }
+   .Footer::before{
+    content: "";
+    height: 100%;
+    width:  100%;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url("./assetss/asset52.jpeg");
+    background-position: center;
+    background-size: cover;
+   }
+
+   /* .brandImage-hove{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+   } */
+   .barndImage-box:hover .brandImage-hove{
+    filter: brightness(0) invert(1);
+
+   }
+   
+   .discoundCrad {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.discoundCrad:hover {
+    transform: translateY(-10px) rotateX(3deg) rotateY(3deg);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1), 
+                0 20px 40px rgba(255, 255, 255, 0.2), 
+                0 30px 60px rgba(255, 255, 255, 0.3);
+}
+
+/*  */
+  
+.moveText{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+}
+.moveText::-webkit-scrollbar{
+    display: none;
+}
+.cons{
+    display: inline-flex;
+    white-space: nowrap;
+    animation: move infinite 50s linear; 
+}
+
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+/* Custom CSS for Swiper navigation buttons */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  width: 20px; /* Reduce size */
+  height: 20px; /* Reduce size */
+ 
+}
+
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 16px; /* Adjust icon size */
+  color: white; /* Change icon color */
+}
+.mySwiper .swiper-button-next::after{
+    position: absolute;
+    right: 40px;
+}
+
+
+/* Optional: Customize the active state */
+.mySwiper .swiper-button-next.swiper-button-disabled,
+.mySwiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5; 
+}
+
+
+.mySwiperRounded{
+    background-image: url("./assetss/asset31.png");
+    position: absolute ;
+    z-index: 10;
+    object-fit: cover;
+    background-position: center;
+    
+}
+
+
+.contatctBtn{
+    overflow: hidden;
+}
+
+.contatctBtn::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background-color: white;
+    transition: all 0.5s;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: all 0.5s;
+    transform-origin: top center;
+}
+
+.contatctBtn:hover h3{
+    position: relative;
+    z-index: 10;
+    color: #FA4F09;
+    font-weight: 700;
+}
+.contatctBtn:hover::after{
+    top: 0px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.conatctLeft{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assetsContact/01ConatctLeft.jpg);
+
+}
+
+
+.playBtn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    scale: 1.2;
+    animation: playbtnafter 2s infinite linear;
+    animation-delay: 1s;
+    
+}
+.playBtn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    scale: 1.5;
+    animation: playbtnbefore 2s infinite linear;
+
+    
+}
+
+@keyframes playbtnafter {
+    from{
+        scale: 1;
+        opacity: 1;
+    }
+    to{
+        scale: 1.5;
+        opacity: 0;
+
+    }
+}
+
+@keyframes playbtnbefore {
+    from{
+        scale: 1;
+        opacity: 1;
+
+    }
+    to{
+        scale: 1.5;
+        opacity: 0;
+
+
+    }
+}
